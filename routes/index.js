@@ -1,7 +1,9 @@
 const request = require('request')
 const cheerio = require('cheerio')
 const ROUTES = [
-  'zulubet'
+  'zulubet',
+  'pronosoft',
+  'matchendirect'
 ]
 
 const routerIndex = (app) => {

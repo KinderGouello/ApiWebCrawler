@@ -19,12 +19,12 @@ const route = (app, request, cheerio) => {
         }
       })
 
-      res.send({ results: results });
+      res.send({ results: results })
     })
   })
 
-  app.get('/zulubet-cotes', (req, res, next) => {
-    request.get('http://www.zulubet.com/', (err, response, body) => {
+  const getCotes = (res, url) => {
+    request.get(url, (err, response, body) => {
       const $ = cheerio.load(body)
       const games = $('.content_table').children('tr').slice(2)
       let results = []
@@ -42,8 +42,16 @@ const route = (app, request, cheerio) => {
         }
       })
 
-      res.send({ results: results });
+      res.send({ results: results })
     })
+  }
+
+  app.get('/zulubet-cotes', (req, res, next) => {
+    getCotes(res, 'http://www.zulubet.com/')
+  })
+
+  app.get('/zulubet-cotes/:date', (req, res, next) => {
+    getCotes(res, `http://www.zulubet.com/tips-${req.params.date}.html`)
   })
 
   return app
