@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/KinderGouello/ApiWebCrawler/issues"
   },
-  "homepage": "https://github.com/KinderGouello/ApiWebCrawler#readme"
+  "homepage": "https://github.com/KinderGouello/ApiWebCrawler#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  }
 }
