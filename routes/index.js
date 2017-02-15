@@ -8,6 +8,8 @@ const ROUTES = [
   'iambettor',
   'soccer1x2',
   'vitibet',
+  'soccerwinners',
+  'betstudy',
 ]
 
 const routerIndex = (app) => {
