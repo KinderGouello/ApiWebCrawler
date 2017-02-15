@@ -9,11 +9,11 @@ const route = (app, request, cheerio) => {
         const equipe_domicile = $(element).children('td').eq(2).text()
 
         if (equipe_domicile !== '') {
-          results[index] = {
+          results.push({
             equipe_domicile: equipe_domicile,
             equipe_exterieur: $(element).children('td').eq(4).text(),
             pari: $(element).find('.pi').text()
-          }
+          })
         }
       })
 

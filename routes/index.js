@@ -3,7 +3,9 @@ const cheerio = require('cheerio')
 const ROUTES = [
   'zulubet',
   'pronosoft',
-  'matchendirect'
+  'matchendirect',
+  'soccervista',
+  'iambettor'
 ]
 
 const routerIndex = (app) => {
