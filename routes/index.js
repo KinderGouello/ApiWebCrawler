@@ -5,7 +5,9 @@ const ROUTES = [
   'pronosoft',
   'matchendirect',
   'soccervista',
-  'iambettor'
+  'iambettor',
+  'soccer1x2',
+  'vitibet',
 ]
 
 const routerIndex = (app) => {

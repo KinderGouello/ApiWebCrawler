@@ -13,8 +13,8 @@ const route = (app, request, cheerio) => {
             equipe_domicile: equipe_domicile,
             equipe_exterieur: $(element).children('td.standardbunka').eq(1).text().trim(),
             pari_domicile: $(element).children('td').eq(5).text(),
-            pari_exterieur: $(element).children('td').eq(6).text(),
-            pari_nul: $(element).children('td').eq(7).text(),
+            pari_nul: $(element).children('td').eq(6).text(),
+            pari_exterieur: $(element).children('td').eq(7).text(),
             pari: $(element).children('td').eq(8).text()
           })
         }
