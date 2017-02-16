@@ -10,6 +10,7 @@ const ROUTES = [
   'vitibet',
   'soccerwinners',
   'betstudy',
+  'madeinfoot',
 ]
 
 const routerIndex = (app) => {
