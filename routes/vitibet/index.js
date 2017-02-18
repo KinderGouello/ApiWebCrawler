@@ -1,30 +1,36 @@
 const route = (app, request, cheerio) => {
   app.get('/vitibet', (req, res, next) => {
     request.get('http://www.vitibet.com/?clanek=quicktips&sekce=fotbal', (err, response, body) => {
-      const $ = cheerio.load(body)
-      const games = $('.tabulkaquick').find('tr')
-      let results = []
+      if (err) {
+        next(Object.assign(err, { status: 502 }));
+      }
+
+      const $ = cheerio.load(body);
+      const games = $('.tabulkaquick').find('tr');
+      const results = [];
 
       games.each((index, element) => {
-        const equipe_domicile = $(element).children('td.standardbunka').eq(1).text().trim()
+        const equipeDomicile = $(element).children('td.standardbunka').eq(1).text()
+          .trim();
 
-        if (equipe_domicile !== '') {
+        if (equipeDomicile !== '') {
           results.push({
-            equipe_domicile: equipe_domicile,
-            equipe_exterieur: $(element).children('td.standardbunka').eq(2).text().trim(),
+            equipe_domicile: equipeDomicile,
+            equipe_exterieur: $(element).children('td.standardbunka').eq(2).text()
+              .trim(),
             pari_domicile: $(element).children('td').eq(6).text(),
             pari_nul: $(element).children('td').eq(7).text(),
             pari_exterieur: $(element).children('td').eq(8).text(),
-            pari: $(element).children('td').eq(9).text()
-          })
+            pari: $(element).children('td').eq(9).text(),
+          });
         }
-      })
+      });
 
-      res.send({ results: results })
-    })
-  })
+      res.send({ results });
+    });
+  });
 
-  return app
-}
+  return app;
+};
 
-module.exports = route
+module.exports = route;

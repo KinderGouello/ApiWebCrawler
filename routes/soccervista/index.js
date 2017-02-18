@@ -1,27 +1,33 @@
 const route = (app, request, cheerio) => {
   app.get('/soccervista', (req, res, next) => {
     request.get('http://www.soccervista.com/', (err, response, body) => {
-      const $ = cheerio.load(body)
-      const games = $('.main').children('tr:not(.headupa):not(.headupe)')
-      let results = []
+      if (err) {
+        next(Object.assign(err, { status: 502 }));
+      }
+
+      const $ = cheerio.load(body);
+      const games = $('.main').children('tr:not(.headupa):not(.headupe)');
+      const results = [];
 
       games.each((index, element) => {
-        const equipe_domicile = $(element).children('td').eq(2).text().trim()
+        const equipeDomicile = $(element).children('td').eq(2).text()
+          .trim();
 
-        if (equipe_domicile !== '') {
+        if (equipeDomicile !== '') {
           results.push({
-            equipe_domicile: equipe_domicile,
-            equipe_exterieur: $(element).children('td').eq(4).text().trim(),
-            pari: $(element).children('td').eq(9).text()
-          })
+            equipe_domicile: equipeDomicile,
+            equipe_exterieur: $(element).children('td').eq(4).text()
+              .trim(),
+            pari: $(element).children('td').eq(9).text(),
+          });
         }
-      })
+      });
 
-      res.send({ results: results })
-    })
-  })
+      res.send({ results });
+    });
+  });
 
-  return app
-}
+  return app;
+};
 
-module.exports = route
+module.exports = route;

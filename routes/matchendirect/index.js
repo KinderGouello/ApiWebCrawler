@@ -1,27 +1,31 @@
 const route = (app, request, cheerio) => {
   app.get('/matchendirect', (req, res, next) => {
     request.get('http://www.matchendirect.fr/pronostics/', (err, response, body) => {
-      const $ = cheerio.load(body)
-      const games = $('#bloc_pronostic').find('.tableau').children('tr').slice(1)
-      let results = []
+      if (err) {
+        next(Object.assign(err, { status: 502 }));
+      }
+
+      const $ = cheerio.load(body);
+      const games = $('#bloc_pronostic').find('.tableau').children('tr').slice(1);
+      const results = [];
 
       games.each((index, element) => {
-        const equipe_domicile = $(element).children('td').eq(2).text()
+        const equipeDomicile = $(element).children('td').eq(2).text();
 
-        if (equipe_domicile !== '') {
+        if (equipeDomicile !== '') {
           results.push({
-            equipe_domicile: equipe_domicile,
+            equipe_domicile: equipeDomicile,
             equipe_exterieur: $(element).children('td').eq(4).text(),
-            pari: $(element).find('.pi').text()
-          })
+            pari: $(element).find('.pi').text(),
+          });
         }
-      })
+      });
 
-      res.send({ results: results })
-    })
-  })
+      res.send({ results });
+    });
+  });
 
-  return app
-}
+  return app;
+};
 
-module.exports = route
+module.exports = route;
