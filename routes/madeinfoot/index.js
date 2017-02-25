@@ -32,7 +32,6 @@ const route = (app, request, cheerio) => {
 
           if (domicile !== '') {
             results.push({
-              competition: '',
               domicile,
               exterieur: rows.eq(3).text(),
               journee: filterOnlyText(rows.eq(0).contents()),
