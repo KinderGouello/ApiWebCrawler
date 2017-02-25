@@ -1,7 +1,7 @@
 const route = (app, request, cheerio) => {
   const filterOnlyText = (node) => {
-    return node.filter(() => {
-      return this.type === 'text';
+    return node.filter((index, element) => {
+      return element.type === 'text';
     }).text().trim();
   };
 
@@ -18,7 +18,6 @@ const route = (app, request, cheerio) => {
 
       games.each((index, element) => {
         const nbChilds = $(element).children().length;
-
         if (nbChilds < 4) {
           results.push({
             competition: filterOnlyText($(element).contents()),
