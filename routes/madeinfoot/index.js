@@ -5,8 +5,8 @@ const route = (app, request, cheerio) => {
     }).text().trim();
   };
 
-  app.get('/madeinfoot', (req, res, next) => {
-    request.get('http://www.madeinfoot.com/live/match-en-direct.php', (err, response, body) => {
+  const getResults = (res, next, url) => {
+    request.get(url, (err, response, body) => {
       if (err) {
         next(Object.assign(err, { status: 502 }));
       }
@@ -43,6 +43,14 @@ const route = (app, request, cheerio) => {
 
       res.send({ results });
     });
+  }
+
+  app.get('/madeinfoot', (req, res, next) => {
+    getResults(res, next, 'http://www.madeinfoot.com/live/match-en-direct.php');
+  });
+
+  app.get('/madeinfoot/:date/:semaine', (req, res, next) => {
+    getResults(res, next, `http://www.madeinfoot.com/live/match-en-direct.php?date_match=${req.params.date}&nsemaine=${req.params.semaine}`);
   });
 
   return app;
