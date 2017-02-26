@@ -43,7 +43,7 @@ const route = (app, request, cheerio) => {
 
       res.send({ results });
     });
-  }
+  };
 
   app.get('/madeinfoot', (req, res, next) => {
     getResults(res, next, 'http://www.madeinfoot.com/live/match-en-direct.php');
