@@ -12,6 +12,7 @@ const ROUTES = [
   'soccerwinners',
   'betstudy',
   'madeinfoot',
+  'pickforwin',
 ];
 
 const routerIndex = (app) => {
