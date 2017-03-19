@@ -15,7 +15,7 @@ const route = (app, request, cheerio) => {
         if (game !== '') {
           results.push({
             match: game,
-            pari: $(element).find('.Prevision').text().trim(),
+            prediction: $(element).find('.Prevision').text().trim(),
           });
         }
       });
