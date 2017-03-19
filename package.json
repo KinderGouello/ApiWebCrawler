@@ -7,7 +7,8 @@
     "start": "node server.js",
     "lint": "eslint . --ext .js ",
     "test": "jest --config .jestrc",
-    "test:coverage": "jest --config .jestrc --coverage"
+    "test:coverage": "jest --config .jestrc --coverage",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
+    "flow": "^0.2.3",
     "jest": "^18.1.0"
   }
 }
