@@ -14,6 +14,7 @@ const ROUTES = [
   'madeinfoot',
   'pickforwin',
   'scometixusers',
+  'xpronostic',
 ];
 
 const routerIndex = (app) => {
