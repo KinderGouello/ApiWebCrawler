@@ -13,6 +13,7 @@ const ROUTES = [
   'betstudy',
   'madeinfoot',
   'pickforwin',
+  'predictz',
   'scometixusers',
   'xpronostic',
 ];
