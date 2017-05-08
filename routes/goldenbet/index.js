@@ -17,9 +17,7 @@ const route = (app, request, cheerio) => {
           results.push({
               equipe_domicile,
               equipe_exterieur: children.eq(2).text().trim(),
-              domicile: children.eq(4).text().trim(),
-              nul: children.eq(5).text().trim(),
-              exterieur: children.eq(6).text().trim()
+              prediction: children.eq(3).find('.uk-badge').text().trim(),
           });
         }
       });
