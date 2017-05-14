@@ -18,6 +18,7 @@ const ROUTES = [
   'xpronostic',
   'goldenbet',
   'forebet',
+  'scorepredictor',
 ];
 
 const routerIndex = (app) => {
