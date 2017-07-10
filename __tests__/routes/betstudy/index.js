@@ -28,7 +28,7 @@ describe('betstudy routes', () => {
         .get('/betstudy-premiereleague')
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
-        .then(res => {
+        .then((res) => {
           expect(res.body).toEqual({
             results: [
               {
