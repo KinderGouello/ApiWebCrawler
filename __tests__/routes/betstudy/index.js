@@ -96,4 +96,21 @@ describe('betstudy routes', () => {
         });
     });
   });
+
+  describe('error during get request', () => {
+    it('should return a 502 error', () => {
+      request.get.mockImplementation((url, cb) => {
+        cb('Error during request', {}, {});
+      });
+
+      return supertest(app)
+        .get('/betstudy-premiereleague')
+        .expect(502)
+        .then((res) => {
+          expect(res.body).toEqual({
+            message: 'Error during request',
+          });
+        });
+    });
+  });
 });

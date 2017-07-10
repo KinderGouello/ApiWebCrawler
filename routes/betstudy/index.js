@@ -2,7 +2,8 @@ const route = (app, request, cheerio) => {
   const getPredictions = (res, next, url) => {
     request.get(url, (err, response, body) => {
       if (err) {
-        next(Object.assign(err, { status: 502 }));
+        res.status(502).send({ message: err });
+        next();
       }
 
       const $ = cheerio.load(body);
