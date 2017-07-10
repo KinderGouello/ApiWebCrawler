@@ -12,12 +12,12 @@ const route = (app, request, cheerio) => {
       games.each((index, element) => {
         const children = $(element).children('td');
         const testLine = children.eq(0).html();
-        const equipe_exterieur = children.eq(6).text().trim();
+        const equipeExterieur = children.eq(6).text().trim();
 
-        if (equipe_exterieur !== '' && testLine !== '') {
+        if (equipeExterieur !== '' && testLine !== '') {
           results.push({
             equipe_domicile: children.eq(2).text().trim(),
-            equipe_exterieur,
+            equipe_exterieur: equipeExterieur,
             prediction: children.eq(7).text().trim(),
           });
         }

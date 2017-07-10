@@ -11,9 +11,9 @@ const route = (app, request, cheerio) => {
 
       games.each((index, element) => {
         const children = $(element).children('td');
-        const pari_nul = children.eq(3).text();
+        const pariNul = children.eq(3).text();
 
-        if (children.length > 0 && pari_nul != '') {
+        if (children.length > 0 && pariNul !== '') {
           const match = children.eq(1).text()
             .trim();
 
@@ -21,7 +21,7 @@ const route = (app, request, cheerio) => {
             results.push({
               match,
               pari_domicile: children.eq(2).text(),
-              pari_nul,
+              pari_nul: pariNul,
               pari_exterieur: children.eq(4).text(),
             });
           }

@@ -10,13 +10,17 @@ const route = (app, request, cheerio) => {
       const results = [];
 
       games.each((index, element) => {
-        const equipe_domicile = $(element).find('.hostteam').find('.name').text().trim();
+        const equipeDomicile = $(element).find('.hostteam').find('.name')
+          .text()
+          .trim();
         const bets = $(element).find('.inforow').find('.coefrow').children('.coefbox');
 
-        if (equipe_domicile) {
+        if (equipeDomicile) {
           results.push({
-            equipe_domicile,
-            equipe_exterieur: $(element).find('.guestteam').find('.name').text().trim(),
+            equipe_domicile: equipeDomicile,
+            equipe_exterieur: $(element).find('.guestteam').find('.name')
+              .text()
+              .trim(),
             domicile: bets.eq(0).text().trim(),
             nul: bets.eq(1).text().trim(),
             exterieur: bets.eq(2).text().trim(),
@@ -39,13 +43,17 @@ const route = (app, request, cheerio) => {
       const results = [];
 
       games.each((index, element) => {
-        const equipe_domicile = $(element).find('.hostteam').find('.name').text().trim();
+        const equipeDomicile = $(element).find('.hostteam').find('.name')
+          .text()
+          .trim();
         const bets = $(element).find('.inforow').find('.userrow');
 
-        if (equipe_domicile) {
+        if (equipeDomicile) {
           results.push({
-            equipe_domicile,
-            equipe_exterieur: $(element).find('.guestteam').find('.name').text().trim(),
+            equipe_domicile: equipeDomicile,
+            equipe_exterieur: $(element).find('.guestteam').find('.name')
+              .text()
+              .trim(),
             domicile: bets.find('.vote1').find('.value').text().trim(),
             nul: bets.find('.voteX').find('.value').text().trim(),
             exterieur: bets.find('.vote2').find('.value').text().trim(),

@@ -11,13 +11,13 @@ const route = (app, request, cheerio) => {
 
       games.each((index, element) => {
         const children = $(element).children('td');
-        const equipe_domicile = children.eq(1).text().trim();
+        const equipeDomicile = children.eq(1).text().trim();
 
-        if (children.length > 0 && equipe_domicile != '') {
+        if (children.length > 0 && equipeDomicile !== '') {
           results.push({
-              equipe_domicile,
-              equipe_exterieur: children.eq(2).text().trim(),
-              prediction: children.eq(3).find('.uk-badge').text().trim(),
+            equipe_domicile: equipeDomicile,
+            equipe_exterieur: children.eq(2).text().trim(),
+            prediction: children.eq(3).find('.uk-badge').text().trim(),
           });
         }
       });

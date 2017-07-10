@@ -1,15 +1,16 @@
 require('dotenv').config();
-const port = process.env.PORT || 3000;
 const express = require('express');
+const Raven = require('raven');
+
+const port = process.env.PORT || 3000;
 
 const app = express();
-const Raven = require('raven');
 
 Raven.config(process.env.SENTRY_DNS).install();
 
 app.use(Raven.requestHandler());
-app.get('/', function mainHandler(req, res) {
-    throw new Error('Broke!');
+app.get('/', () => {
+  throw new Error('Broke!');
 });
 app.use(Raven.errorHandler());
 
