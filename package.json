@@ -33,8 +33,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "flow": "^0.2.3",
-    "fs": "^0.0.1-security",
-    "jest": "^18.1.0",
+    "jest": "^20.0.4",
     "supertest": "^3.0.0"
   }
 }
