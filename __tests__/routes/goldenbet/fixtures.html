@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <div class="uk-margin-top tipster_contents_div">
+    <div class="uk-overflow-container">
+      <table class="uk-table uk-table-hover uk-table-striped yt_com_tipsters_table">
+        <thead>
+          <tr class="uk-table-middle">
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10 uk-hidden-medium uk-hidden-small yt_league_th">
+              <select onchange="javascript:tipsterNewLeague(this);">
+                <option value="0">League</option>
+                <option value="AMEC">AMEC</option>
+                <option value="BRA1">Brazil - Serie A</option>
+                <option value="ICL2">ICL2</option>
+                <option value="IF">World - Friendly International</option>
+              </select>
+            </th>
+            <th class="uk-width-small-3-10 uk-width-medium-3-10 uk-width-large-3-10">Home</th>
+            <th class="uk-width-small-3-10 uk-width-medium-3-10 uk-width-large-3-10">Away</th>
+            <th class="uk-width-small-2-10 uk-width-medium-2-10 uk-width-large-2-10">
+              <select onchange="javascript:tipsterNewOdds(this);">
+                <option value="0">Tip</option>
+                <option value="gold">gold</option>
+                <option value="value">value</option>
+                <option value="risky">risky</option>
+                <option value="nobet">nobet</option>
+              </select>
+            </th>
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10 uk-hidden-medium uk-hidden-small">1</th>
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10 uk-hidden-medium uk-hidden-small">X</th>
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10 uk-hidden-medium uk-hidden-small">2</th>
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10">Score</th>
+            <th class="uk-width-small-1-10 uk-width-medium-1-10 uk-width-large-1-10"><span title="GB">GB</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=171938"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('BRA1')"><img class="tipster_champimg" title="Brazil - Serie A" alt="Brazil - Serie A" src="https://goldenbet.com/components/com_tipster/images/bra1.png"></a>
+            </td>
+            <td class="uk-text-bold">CORITIBA PR</td>
+            <td class="uk-text-bold">SPORT RECIFE PE</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.65</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.20</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.25</td>
+            <td class="uk-text-bold">0 - 3</td>
+            <td><img class="tipster_result_img" title="Lost" alt="Lost" src="https://goldenbet.com/components/com_tipster/images/lost.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172161"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('AMEC')"><img class="tipster_champimg" title="AMEC" alt="AMEC" src="https://goldenbet.com/components/com_tipster/images/amec.png"></a>
+            </td>
+            <td class="uk-text-bold">SAN JOSE EARTHQUAKES</td>
+            <td class="uk-text-bold">LOS ANGELES GALAXY</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.62</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.45</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.15</td>
+            <td class="uk-text-bold">3 - 2</td>
+            <td><img class="tipster_result_img" title="Won" alt="Won" src="https://goldenbet.com/components/com_tipster/images/won.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=171997"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">FK VIKTORIA PLZEN</td>
+            <td class="uk-text-bold">SPVGG GREUTHER FURTH</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.90</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.40</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.00</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=171999"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">BIRMINGHAM CITY</td>
+            <td class="uk-text-bold">1. FC UNION BERLIN</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-danger" style="position: relative; left: -20px">X</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('risky')"><img class="tipster_odds_img" alt="risky" src="https://goldenbet.com/components/com_tipster/images/risky.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.35</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.45</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172000"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">MSV DUISBURG</td>
+            <td class="uk-text-bold">FC WUERZ.KICKERS</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">1X</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.50</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.25</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=171998"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">SV GROEDIG</td>
+            <td class="uk-text-bold">FC BLAU WEISS LINZ</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.55</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.15</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172001"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">Fortuna Cologne</td>
+            <td class="uk-text-bold">1. FC SAARBRÜCKEN</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.70</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.65</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.45</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172002"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">TUS KOBLENZ</td>
+            <td class="uk-text-bold">FSV MAINZ 05</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">7.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.25</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172003"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">FC LUGANO</td>
+            <td class="uk-text-bold">AC MILAN</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.45</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172007"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">FC RAPPERSWIL-JONA</td>
+            <td class="uk-text-bold">VFL WOLFSBURG</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">7.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.25</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172005"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">ROT-WEISS ESSEN</td>
+            <td class="uk-text-bold">BORUSSIA DORTMUND</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">11.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">6.50</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.10</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172004"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">SK LIERSE</td>
+            <td class="uk-text-bold">SV ZULTE WAREGEM</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.80</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.60</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.15</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172006"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">VALENCIENNES FC</td>
+            <td class="uk-text-bold">COVENTRY CITY</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">1X</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.45</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.15</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.35</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172008"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">FC LAUSANNE-SPORT</td>
+            <td class="uk-text-bold">CF VALENCIA</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">X2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.85</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.30</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.00</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172009"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">CHESTERFIELD</td>
+            <td class="uk-text-bold">SL BENFICA B</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-danger" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('risky')"><img class="tipster_odds_img" alt="risky" src="https://goldenbet.com/components/com_tipster/images/risky.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.35</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.15</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.45</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172013"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">ALFRETON TOWN</td>
+            <td class="uk-text-bold">SHEFFIELD WEDNESDAY</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">6.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.50</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.30</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172014"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">DARTFORD</td>
+            <td class="uk-text-bold">GILLINGHAM</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.45</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172011"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">GUISELEY AFC</td>
+            <td class="uk-text-bold">BARNSLEY FC</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.40</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172010"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">MARINE FC</td>
+            <td class="uk-text-bold">AFC FYLDE</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.30</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.60</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.75</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172012"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">NUNEATON TOWN FC</td>
+            <td class="uk-text-bold">PETERBOROUGH UNITED</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.45</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172015"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">BASINGSTOKE TOWN</td>
+            <td class="uk-text-bold">EASTLEIGH FC</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.45</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.65</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.70</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172020"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">BUXTON FC</td>
+            <td class="uk-text-bold">CREWE ALEXANDRA</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.40</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172021"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">DUMBARTON</td>
+            <td class="uk-text-bold">PARTICK THISTLE</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.20</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.50</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.80</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172022"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">LIMERICK 37 FC</td>
+            <td class="uk-text-bold">CHARLTON ATHLETIC</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.35</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.30</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.35</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172017"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">OXFORD CITY</td>
+            <td class="uk-text-bold">CHELTENHAM TOWN</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.95</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.30</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.95</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172018"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">STEVENAGE FC</td>
+            <td class="uk-text-bold">NORWICH CITY</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.25</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.50</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172016"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">TONBRIDGE ANGELS</td>
+            <td class="uk-text-bold">EBBSFLEET UNITED</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.15</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.75</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.55</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172019"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('IF')"><img class="tipster_champimg" title="World - Friendly International" alt="World - Friendly International" src="https://goldenbet.com/components/com_tipster/images/if.png"></a>
+            </td>
+            <td class="uk-text-bold">WEYMOUTH FC</td>
+            <td class="uk-text-bold">YEOVIL TOWN</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-danger" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('risky')"><img class="tipster_odds_img" alt="risky" src="https://goldenbet.com/components/com_tipster/images/risky.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.85</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.45</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.95</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172152"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">GROTTA</td>
+            <td class="uk-text-bold">LEIKNIR REYKJAVIK</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.80</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.15</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.10</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172151"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">HAUKAR HAFNARFJÖRDUR</td>
+            <td class="uk-text-bold">UMF SELFOSS</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.05</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">3.40</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">2.70</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172153"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">IR REYKJAVIK</td>
+            <td class="uk-text-bold">FYLKIR REYKJAVIK</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">2</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.50</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.30</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172155"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">KEFLAVIK IF</td>
+            <td class="uk-text-bold">HK KOPAVOGUR</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-success" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('value')"><img class="tipster_odds_img" alt="value" src="https://goldenbet.com/components/com_tipster/images/value.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.40</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.25</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172150"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">THOR AKUREYRI</td>
+            <td class="uk-text-bold">LEIKNIR FASKRUOSFIROI</td>
+            <td class="uk-text-bold uk-text-right">
+              <div class="uk-badge uk-badge-warning" style="position: relative; left: -20px">1</div>
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('gold')"><img class="tipster_odds_img" alt="gold" src="https://goldenbet.com/components/com_tipster/images/gold.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.40</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.25</td>
+            <td class="uk-text-bold"></td>
+            <td><img class="tipster_result_img" title="Pending" alt="Pending" src="https://goldenbet.com/components/com_tipster/images/pending.png"></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td">
+              <a style="float:left; position:relative; display: none;" target="_blank" href="/en/component/tipstersnet/?gameid=172154"><i class="uk-icon-small uk-icon-comments-o"></i> </a>
+              <a href="#" onclick="javascript: tipsterNewLeagueMenu('ICL2')">ICL2</a>
+            </td>
+            <td class="uk-text-bold">THROTTUR REYKJAVIK</td>
+            <td class="uk-text-bold">FRAM REYKJAVIK</td>
+            <td class="uk-text-bold uk-text-right">
+              <a href="#" onclick="javascript: tipsterNewOddsMenu('nobet')"><img class="tipster_odds_img" alt="nobet" src="https://goldenbet.com/components/com_tipster/images/nobet.png"></a>
+            </td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">1.40</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">4.00</td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small">5.25</td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+          <tr class="uk-table-middle">
+            <td class="tipster_results_league uk-text-small uk-hidden-medium uk-hidden-small yt_league_td"></td>
+            <td class="uk-text-bold"></td>
+            <td class="uk-text-bold"></td>
+            <td class="uk-text-bold uk-text-right"></td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small"></td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small"></td>
+            <td class=" uk-text-small uk-hidden-medium uk-hidden-small"></td>
+            <td class="uk-text-bold"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
