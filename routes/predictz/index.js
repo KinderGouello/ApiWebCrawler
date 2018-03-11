@@ -6,7 +6,7 @@ const route = (app, request, cheerio) => {
       }
 
       const $ = cheerio.load(body);
-      const games = $('body').text();
+      $('body').text();
       const results = [];
 
       // console.log(games);

@@ -11,11 +11,11 @@ const route = (app, request, cheerio) => {
 
       games.each((index, element) => {
         const children = $(element).children('td');
-        const equipe_domicile = children.eq(0).text().trim();
+        const equipeDomicile = children.eq(0).text().trim();
 
-        if (equipe_domicile) {
+        if (equipeDomicile) {
           results.push({
-            equipe_domicile,
+            equipe_domicile: equipeDomicile,
             equipe_exterieur: children.eq(3).text().trim(),
             predictions: children.eq(5).text().trim(),
           });
